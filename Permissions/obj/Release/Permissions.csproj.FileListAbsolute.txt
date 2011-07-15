@@ -1,0 +1,16 @@
+C:\Users\Luke\Desktop\bogeymanEST-Terraria-Plugins-1b55b19\Permissions\obj\Release\ResolveAssemblyReference.cache
+C:\Users\TRACEY AND MICK\Desktop\Server\Terraria Server\Plugins\Essentials TEMP!\Permissions.dll
+C:\Users\TRACEY AND MICK\Desktop\Server\Terraria Server\Plugins\Essentials TEMP!\Permissions.pdb
+C:\Users\TRACEY AND MICK\Desktop\Server\Terraria PLUGINS!\Permissions\obj\Release\ResolveAssemblyReference.cache
+C:\Users\TRACEY AND MICK\Desktop\Server\Terraria PLUGINS!\Permissions\obj\Release\Permissions.dll
+C:\Users\TRACEY AND MICK\Desktop\Server\Terraria PLUGINS!\Permissions\obj\Release\Permissions.pdb
+C:\Users\TRACEY AND MICK\Desktop\Server\DropBox\Dropbox\Dropboxmeow\Public\Permissions.dll
+C:\Users\TRACEY AND MICK\Desktop\Server\DropBox\Dropbox\Dropboxmeow\Public\Permissions.pdb
+C:\Users\TRACEY AND MICK\Desktop\Server\PermissionsGIT!\Permissions\obj\Release\ResolveAssemblyReference.cache
+C:\Users\TRACEY AND MICK\Desktop\Server\PermissionsGIT!\Permissions\obj\Release\Permissions.dll
+C:\Users\TRACEY AND MICK\Desktop\Server\PermissionsGIT!\Permissions\obj\Release\Permissions.pdb
+C:\Users\TRACEY AND MICK\PermissionsGIT\Permissions\obj\Release\ResolveAssemblyReference.cache
+C:\Users\TRACEY AND MICK\PermissionsGIT\Permissions\obj\Release\Permissions.dll
+C:\Users\TRACEY AND MICK\PermissionsGIT\Permissions\obj\Release\Permissions.pdb
+C:\Users\TRACEY AND MICK\DropBox\Dropbox\Dropboxmeow\Public\Permissions.dll
+C:\Users\TRACEY AND MICK\DropBox\Dropbox\Dropboxmeow\Public\Permissions.pdb
