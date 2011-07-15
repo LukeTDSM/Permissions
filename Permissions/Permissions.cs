@@ -50,11 +50,8 @@ namespace Permissions
 			registerHook(Hooks.PLAYER_CHAT);
 			
 			//Create Directory
-            Directory.CreateDirectory(pluginFolder);
+            
 			
-			//Create XML in there!
-            File.Create(pluginFolder + Path.DirectorySeparatorChar + "permissions.xml");
-
             string permissionsxml = pluginFolder + Path.DirectorySeparatorChar + "permissions.xml";
 		}
 
@@ -176,7 +173,7 @@ namespace Permissions
                 string permissionsxml = pluginFolder + Path.DirectorySeparatorChar + "permissions.xml";
 				Players.Clear();
 				Groups.Clear();
-				if (!File.Exists(permissionsxml)) throw new Exception("Permissions file does not exist!");
+                if (!File.Exists(permissionsxml)) Directory.CreateDirectory(pluginFolder); File.Create(pluginFolder + Path.DirectorySeparatorChar + "permissions.xml");
 				var Reader = new XmlTextReader(permissionsxml);
 				string curElement = "";
 				bool inGroups = false;
