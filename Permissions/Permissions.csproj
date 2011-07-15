@@ -52,11 +52,14 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Terraria_Server">
-      <HintPath>..\..\Desktop\Server\Terraria Server\Terraria_Server.exe</HintPath>
+      <HintPath>..\..\TDSM\Terraria_Server\bin\Debug\Terraria_Server.exe</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GroupPermissions.cs" />
+    <Compile Include="PermissionManager.cs" />
     <Compile Include="Permissions.cs" />
+    <Compile Include="PlayerPermissions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
