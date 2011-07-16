@@ -5,8 +5,11 @@ using System.Text;
 using System.IO;
 using System.Xml;
 
+using Permissions;
+using Terraria_Server.Plugin;
 using Terraria_Server;
 using Terraria_Server.Commands;
+using Terraria_Server.Events;
 
 namespace Permissions
 {
@@ -18,7 +21,12 @@ namespace Permissions
         {
             try
             {
-                using (var writer = new XmlTextWriter(Permissions.permissionsxml, Encoding.UTF8))
+                /*File.Delete(Application.StartupPath + "\\permissions.xml");
+                File.Create(Application.StartupPath + "\\permissions.xml");*/
+                string pluginFolder = Statics.PluginPath + Path.DirectorySeparatorChar + "Permissions";
+                string permissionsxml = pluginFolder + Path.DirectorySeparatorChar + "permissions.xml";
+
+                using (var writer = new XmlTextWriter(permissionsxml, Encoding.UTF8))
                 {
                     writer.WriteStartDocument();
                     writer.WriteWhitespace("\r\n");
@@ -82,9 +90,13 @@ namespace Permissions
         {
             try
             {
+                string pluginFolder = Statics.PluginPath + Path.DirectorySeparatorChar + "Permissions";
+                string permissionsxml = pluginFolder + Path.DirectorySeparatorChar + "permissions.xml";
                 Players.Clear();
                 Groups.Clear();
-                var Reader = new XmlTextReader(Permissions.permissionsxml);
+                if (!Directory.Exists(pluginFolder)) Directory.CreateDirectory(pluginFolder);
+                if (!File.Exists(permissionsxml)) File.WriteAllText(pluginFolder, "xml");
+                var Reader = new XmlTextReader(permissionsxml);
                 string curElement = "";
                 bool inGroups = false;
                 bool inPlayers = false;
@@ -170,6 +182,7 @@ namespace Permissions
                             }
                             break;
                     }
+
                 }
             }
             catch (Exception ex)
