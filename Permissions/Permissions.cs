@@ -32,8 +32,15 @@ namespace Permissions
 
 			//Load hooks
 			registerHook(Hooks.PLAYER_CHAT);
-        }
-
+			
+			//Create Directory
+            if(!Directory.Exists(pluginFolder))
+                Directory.CreateDirectory(pluginFolder);
+			
+            //Create permissions file
+            if (!File.Exists(permissionsxml))
+                File.Create(permissionsxml);
+		}
 
 		public override void Enable()
 		{
